@@ -1,0 +1,278 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sriracha&display=swap');
+
+//font family
+$Another-font: 'Sriracha', cursive;
+
+//font size
+$Header-Web: 6em;
+$Header-font: 3em;
+$Header-font-sub: 2em;
+$Header-font-sub-sub: 1.5em;
+//color
+$White-color: rgb(255, 255, 255);
+$Black-color: rgb(0, 0, 0);
+$SubWhite-color: rgb(199, 199, 199);
+$primary-color: #3d4423;
+$secondary-color: #759194;
+$subfont-color: rgb(78, 78, 78);
+$footer-color: rgb(51, 51, 51);
+$prive: rgb(221, 91, 39);
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+    h1{
+        box-sizing: border-box;
+    }
+
+    p{
+        line-height: 150%;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: $secondary-color;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .navbar{
+        width: 100%;
+        height: 105.11px;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 99;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $footer-color;
+        nav{
+            height: 80px;
+            width: 100%;
+
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                margin-left: 38px;
+            }
+
+            ul{
+                float: right;
+                margin-right: 20px;
+
+                li{
+                    display: inline-block;
+                    line-height: 80px;
+                    margin: 0 5px;
+                    a{
+                        color: white;
+                        font-size: 17px;
+                        padding: 7px 13px;
+                        border-radius: 3px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        &:hover{
+                            background: $secondary-color;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+
+            .checkbtn{
+                font-size: 30px;
+                color: white;
+                float: right;
+                line-height: 80px;
+                margin-right: 40px;
+                cursor: pointer;
+                display: none;
+            }
+            #check{
+                display: none;
+            }
+        }
+    }
+}
+
+.line{
+    width: 100%;
+    height: 100vh;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        width: 80%;
+        height: 80%;
+        background-color: $White-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+        img{
+            width: 30%;
+        }
+
+        h1{
+            font-size: $Header-font;
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    height: 60vh;
+    background-color: $footer-color;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .foot{
+        width: 55%;
+        height: 55%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        img{
+            width: 20%;
+            padding: 24px;
+        }
+        p{
+            color: $SubWhite-color;
+        }
+    }
+
+    .contact-2{
+        width: 100%;
+        height: 45%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            height: 30%;
+            font-size: $Header-font-sub-sub;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            color: $White-color;
+            text-decoration: none;
+
+            &:hover{
+                color: $secondary-color;
+            }
+            
+        }
+        .icon{
+            width: 100%;
+            height: 70%;
+            color: $White-color;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            
+            a{
+                &:hover{
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+
+    h1{
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        font-size: smaller;
+        color: rgb(182, 182, 182);
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .line{
+        div{
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    header{
+        .navbar{
+            nav{
+                .checkbtn{
+                    display: block;
+                }
+        
+                #check:checked ~ ul{
+                    left: 0;
+                }
+        
+                ul{
+                    position: fixed;
+                    width: 100%;
+                    height: 26vh;
+                    background: $secondary-color;
+                    top: 9%;
+                    left: -100%;
+                    text-align: center;
+                    transition: all .5s;
+        
+                    li{
+                        display: block;
+                        margin: 50px 0;
+                        line-height: 30px;
+        
+                        a{
+                            color: $White-color;
+                            &:hover{
+                                background: none;
+                                color: $primary-color;
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        .foot{
+            flex-direction: column;
+            img{
+                width: 60%;
+            }
+        }
+    }
+}

@@ -1,0 +1,381 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Sriracha&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+body h1 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body p {
+  line-height: 150%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #759194;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar {
+  width: 100%;
+  height: 105.11px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333333;
+}
+
+header .navbar nav {
+  height: 80px;
+  width: 100%;
+}
+
+header .navbar nav img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin-left: 38px;
+}
+
+header .navbar nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+header .navbar nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+header .navbar nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navbar nav ul li a:hover {
+  background: #759194;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .navbar nav .checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+header .navbar nav #check {
+  display: none;
+}
+
+.line {
+  width: 100%;
+  height: 100vh;
+  background-color: #3d4423;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.line div {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.line div img {
+  width: 30%;
+}
+
+.line div h1 {
+  font-size: 3em;
+}
+
+footer {
+  width: 100%;
+  height: 60vh;
+  background-color: #333333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .foot {
+  width: 55%;
+  height: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .foot img {
+  width: 20%;
+  padding: 24px;
+}
+
+footer .foot p {
+  color: #c7c7c7;
+}
+
+footer .contact-2 {
+  width: 100%;
+  height: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contact-2 a {
+  height: 30%;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: white;
+  text-decoration: none;
+}
+
+footer .contact-2 a:hover {
+  color: #759194;
+}
+
+footer .contact-2 .icon {
+  width: 100%;
+  height: 70%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+}
+
+footer .contact-2 .icon a:hover {
+  color: #759194;
+}
+
+footer h1 {
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  font-size: smaller;
+  color: #b6b6b6;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .line div img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header .navbar nav .checkbtn {
+    display: block;
+  }
+  header .navbar nav #check:checked ~ ul {
+    left: 0;
+  }
+  header .navbar nav ul {
+    position: fixed;
+    width: 100%;
+    height: 26vh;
+    background: #759194;
+    top: 9%;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  header .navbar nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  header .navbar nav ul li a {
+    color: white;
+  }
+  header .navbar nav ul li a:hover {
+    background: none;
+    color: #3d4423;
+  }
+  footer .foot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .foot img {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=line.css.map */

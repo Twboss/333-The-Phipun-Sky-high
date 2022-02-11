@@ -1,0 +1,389 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sriracha&display=swap');
+
+//font family
+$Another-font: 'Sriracha', cursive;
+
+//font size
+$Header-Web: 6em;
+$Header-font: 3em;
+$Header-font-sub: 2em;
+$Header-font-sub-sub: 1.5em;
+//color
+$White-color: rgb(255, 255, 255);
+$Black-color: rgb(0, 0, 0);
+$SubWhite-color: rgb(199, 199, 199);
+$primary-color: #3d4423;
+$primary2-color: #506157;
+$secondary-color: #759194;
+$subfont-color: rgb(78, 78, 78);
+$footer-color: rgb(51, 51, 51);
+$prive: rgb(221, 91, 39);
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+    h1{
+        box-sizing: border-box;
+    }
+
+    p{
+        line-height: 150%;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: $secondary-color;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .navbar{
+        width: 100%;
+        height: 9%;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 99;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $footer-color;
+        nav{
+            height: 80px;
+            width: 100%;
+
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                margin-left: 38px;
+            }
+
+            ul{
+                float: right;
+                margin-right: 20px;
+
+                li{
+                    display: inline-block;
+                    line-height: 80px;
+                    margin: 0 5px;
+                    a{
+                        color: white;
+                        font-size: 17px;
+                        padding: 7px 13px;
+                        border-radius: 3px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        &:hover{
+                            background: $secondary-color;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+
+            .checkbtn{
+                font-size: 30px;
+                color: white;
+                float: right;
+                line-height: 80px;
+                margin-right: 40px;
+                cursor: pointer;
+                display: none;
+            }
+            #check{
+                display: none;
+            }
+        }
+    }
+
+    .main{
+        width: 100%;
+        height: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 105.11px;
+
+        h1{
+            font-family: $Another-font;
+            font-size: $Header-Web;
+            position: absolute;
+            z-index: 3;
+            color: $White-color;
+        }
+    
+        img{
+            width: 50%;
+            height: 50%;
+            filter: brightness(40%);
+            z-index: 1;
+            object-fit: cover;
+            border-radius: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.contact{
+    width: 100%;
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    section{
+        width: 80%;
+        height: 60%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .blank{
+            width: 100%;
+            height: 40vh;
+            background-color: $primary2-color;
+            margin: 0 auto;
+            align-items: center;
+            
+        }
+
+        img{
+            width: 60%;
+            height: 50%;
+            object-fit: cover;
+            position: absolute;
+            left: 10%;
+        }
+
+        .text{
+            position: absolute;
+            width: 30%;
+            height: 30vh;
+            right: 10%;
+            margin: 5vh 0 5vh 0;
+            padding: 0 60px 0 60px;
+            gap: 24px;
+            
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $White-color;
+
+
+            h1{
+                font-size: $Header-font;
+                font-family: $Another-font;
+            }
+            p{
+                color: $subfont-color;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    height: 60vh;
+    background-color: $footer-color;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .foot{
+        width: 55%;
+        height: 55%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        img{
+            width: 20%;
+            padding: 24px;
+        }
+        p{
+            color: $SubWhite-color;
+        }
+    }
+
+    .contact-2{
+        width: 100%;
+        height: 45%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            height: 30%;
+            font-size: $Header-font-sub-sub;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            color: $White-color;
+            text-decoration: none;
+
+            &:hover{
+                color: $secondary-color;
+            }
+            
+        }
+        .icon{
+            width: 100%;
+            height: 70%;
+            color: $White-color;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            
+            a{
+                &:hover{
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+
+    h1{
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        font-size: smaller;
+        color: rgb(182, 182, 182);
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px){
+    header{
+        height: 60vh;
+
+        .navbar{
+            nav{
+                .checkbtn{
+                    display: block;
+                }
+        
+                #check:checked ~ ul{
+                    left: 0;
+                }
+        
+                ul{
+                    position: fixed;
+                    width: 100%;
+                    height: 26vh;
+                    background: $secondary-color;
+                    top: 9%;
+                    left: -100%;
+                    text-align: center;
+                    transition: all .5s;
+        
+                    li{
+                        display: block;
+                        margin: 50px 0;
+                        line-height: 30px;
+        
+                        a{
+                            color: $White-color;
+                            &:hover{
+                                background: none;
+                                color: $primary-color;
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+
+        .main{
+            h1{
+                text-align: center;
+            }
+
+            img{
+                border-radius: none;
+                min-width: 100%;
+                max-width: 100%;
+                min-height: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+
+    .contact{
+        section{
+            flex-direction: column;
+            gap: 10px;
+            .blank{
+                position: absolute;
+                width: 80%;
+                height: 80%;
+            }
+            img{
+                width: 90%;
+                position:relative;
+                left: 0;
+                border-radius: 30px;
+            }
+            .text{
+                background-color: $White-color;
+                width: 80%;
+                position:relative;
+                right: 0;
+                margin: 0;
+                padding: 24px;
+                border-radius: 30px;
+            }
+        }
+    }
+
+    footer{
+        .foot{
+            flex-direction: column;
+            img{
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .contact{
+        section{
+            .blank{
+                width: 100%;
+            }
+            .text{
+                h1{
+                    font-size: $Header-font-sub;
+                }
+            }
+        }
+    }
+}
