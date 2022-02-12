@@ -278,6 +278,7 @@ header .logo-00 .img-scoll02 {
 .the-phipun .intro div h1 {
   font-family: 'Sriracha', cursive;
   font-size: 3em;
+  text-align: end;
 }
 
 .the-phipun .intro div p {
