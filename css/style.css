@@ -867,6 +867,9 @@ footer h1 {
             justify-content: flex-end;
     padding: 0;
   }
+  .the-phipun .intro div h1 {
+    text-align: center;
+  }
   .the-phipun .intro div p {
     text-align: start;
   }
